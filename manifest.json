@@ -1,11 +1,13 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
-	"version": "1.0.0",
-	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
-	"fundingUrl": "https://obsidian.md/pricing",
+	"id": "plugin-template-svelte",
+	"name": "Obsidian Plugin Template - Svelte",
+	"version": "0.9.1",
+	"minAppVersion": "1.7.0",
+	"description": "A highly opinionated template for Obsidian (https://obsidian.md) plugin development.",
+	"author": "Scott J. Walter (sjwalter@gmail.com)",
+	"authorUrl": "https://scottjwalter.github.io/",
+	"fundingUrl": {
+		"Buy Me a Coffee": "https://buymeacoffee.com/scottjwalter"
+	},
 	"isDesktopOnly": false
 }
