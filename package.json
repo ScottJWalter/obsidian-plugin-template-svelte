@@ -1,6 +1,6 @@
 {
   "name": "obsidian-plugin-template-svelte",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A highly opinionated template for Obsidian (https://obsidian.md) plugin development.",
   "main": "main.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "@typescript-eslint/eslint-plugin": "5.29.0",
     "@typescript-eslint/parser": "5.29.0",
     "builtin-modules": "3.3.0",
-    "bun-types": "^1.1.27",
+    "bun-types": "^1.1.28",
     "dotenv": "^16.4.5",
     "esbuild": "0.17.3",
     "esbuild-svelte": "^0.8.2",
