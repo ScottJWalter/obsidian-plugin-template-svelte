@@ -4,9 +4,9 @@
   "description": "A highly opinionated template for Obsidian (https://obsidian.md) plugin development.",
   "main": "main.js",
   "scripts": {
-    "dev": "bun esbuild.config.mjs",
-    "build": "tsc -noEmit -skipLibCheck && bun esbuild.config.mjs production",
-    "version": "bun version-bump.mjs && git add manifest.json versions.json",
+    "dev": "bun scripts/esbuild.config.mjs",
+    "build": "tsc -noEmit -skipLibCheck && bun scripts/esbuild.config.mjs production",
+    "version": "bun scripts/version-bump.mjs && git add manifest.json versions.json",
     "gac": "gac . $COMMIT_TYPE - '$COMMIT_MESSAGE'"
   },
   "keywords": [],
