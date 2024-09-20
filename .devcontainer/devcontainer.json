@@ -1,10 +1,11 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Ubuntu",
+	"name": "obsidian-plugin-template-svelte",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
+		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {
 			"installDirectlyFromGitHubRelease": true,
 			"version": "latest"
@@ -16,7 +17,11 @@
 			"pnpmVersion": "latest",
 			"nvmVersion": "latest"
 		},
-		"ghcr.io/lumenpink/devcontainer-features/bun:0": {}
+		"ghcr.io/lumenpink/devcontainer-features/bun:0": {},
+		"ghcr.io/eitsupi/devcontainer-features/duckdb-cli:1": {},
+		"ghcr.io/wxw-matt/devcontainer-features/command_runner:latest": {
+			"command1": "npm i -g git-add-then-commit"
+        }
 	},
 	"customizations": {
 		"vscode": {
@@ -28,8 +33,7 @@
 				"dbaeumer.vscode-eslint",
 				"DavidAnson.vscode-markdownlint",
 				"willasm.obsidian-md-vsc",
-				"Gruntfuggly.todo-tree",
-				"fabiospampinato.vscode-todo-plus"
+				"Gruntfuggly.todo-tree"
 			]
 		}
 	}
