@@ -23,6 +23,7 @@
     "esbuild-svelte": "^0.8.2",
     "jest-environment-obsidian": "^0.0.1",
     "obsidian": "latest",
+    "obsidian-extra": "^0.1.5",
     "svelte": "^4.2.19",
     "svelte-preprocess": "^6.0.2",
     "tslib": "2.4.0",
