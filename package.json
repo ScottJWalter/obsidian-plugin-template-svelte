@@ -9,7 +9,14 @@
     "version": "bun scripts/version-bump.mjs && git add manifest.json versions.json",
     "gac": "gac . $COMMIT_TYPE - '$COMMIT_MESSAGE'"
   },
-  "keywords": [],
+  "keywords": [
+    "bun",
+    "husky",
+    "obsidian",
+    "obsidian-plugin",
+    "obsidian-plugin-template",
+    "svelte"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
