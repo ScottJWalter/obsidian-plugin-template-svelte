@@ -21,7 +21,13 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"1YiB.svelte-bundle"
+				"1YiB.svelte-bundle",
+				"ardenivanov.svelte-intellisense",
+				"svelte.svelte-vscode",
+				"fivethree.vscode-svelte-snippets",
+				"dbaeumer.vscode-eslint",
+				"DavidAnson.vscode-markdownlint",
+				"willasm.obsidian-md-vsc"
 			]
 		}
 	}
