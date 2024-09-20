@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "bun esbuild.config.mjs",
     "build": "tsc -noEmit -skipLibCheck && bun esbuild.config.mjs production",
-    "version": "bun version-bump.mjs && git add manifest.json versions.json"
+    "version": "bun version-bump.mjs && git add manifest.json versions.json",
+    "gac": "gac . $COMMIT_TYPE -- $COMMIT_MESSAGE"
   },
   "keywords": [],
   "author": "",
