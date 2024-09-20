@@ -20,6 +20,7 @@
     "dotenv": "^16.4.5",
     "esbuild": "0.17.3",
     "esbuild-svelte": "^0.8.2",
+    "jest-environment-obsidian": "^0.0.1",
     "obsidian": "latest",
     "svelte": "^4.2.19",
     "svelte-preprocess": "^6.0.2",
