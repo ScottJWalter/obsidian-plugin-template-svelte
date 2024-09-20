@@ -21,7 +21,8 @@
 		"ghcr.io/eitsupi/devcontainer-features/duckdb-cli:1": {},
 		"ghcr.io/wxw-matt/devcontainer-features/command_runner:latest": {
 			"command1": "npm i -g git-add-then-commit"
-        }
+        },
+		"ghcr.io/devcontainers/features/sshd:1": {}
 	},
 	"customizations": {
 		"vscode": {
