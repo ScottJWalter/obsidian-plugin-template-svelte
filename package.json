@@ -27,6 +27,7 @@
     "bun-types": "^1.1.28",
     "dotenv": "^16.4.5",
     "esbuild": "0.17.3",
+    "esbuild-plugin-obsidian": "^0.1.0",
     "esbuild-svelte": "^0.8.2",
     "husky": "^9.1.6",
     "jest-environment-obsidian": "^0.0.1",
