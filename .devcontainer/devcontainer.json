@@ -34,7 +34,8 @@
 				"dbaeumer.vscode-eslint",
 				"DavidAnson.vscode-markdownlint",
 				"willasm.obsidian-md-vsc",
-				"Gruntfuggly.todo-tree"
+				"Gruntfuggly.todo-tree",
+				"timonwong.shellcheck"
 			]
 		}
 	}
