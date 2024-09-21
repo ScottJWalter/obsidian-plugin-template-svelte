@@ -1,4 +1,4 @@
-import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Setting } from 'obsidian';
+import { App, Editor, MarkdownView, Modal, Notice, Plugin, PluginSettingTab, Setting, type MarkdownFileInfo } from 'obsidian';
 
 // Remember to rename these classes and interfaces!
 
@@ -11,7 +11,7 @@ const DEFAULT_SETTINGS: MyPluginSettings = {
 }
 
 export default class MyPlugin extends Plugin {
-	settings: MyPluginSettings;
+	settings: MyPluginSettings | undefined;
 
 	async onload() {
 		await this.loadSettings();
@@ -40,7 +40,7 @@ export default class MyPlugin extends Plugin {
 		this.addCommand({
 			id: 'sample-editor-command',
 			name: 'Sample editor command',
-			editorCallback: (editor: Editor, view: MarkdownView) => {
+			editorCallback: (editor: Editor, ctx: MarkdownView | MarkdownFileInfo) => {
 				console.log(editor.getSelection());
 				editor.replaceSelection('Sample Editor Command');
 			}
@@ -120,15 +120,18 @@ class SampleSettingTab extends PluginSettingTab {
 
 		containerEl.empty();
 
-		new Setting(containerEl)
+		if (this.plugin.settings) {
+			new Setting(containerEl)
 			.setName('Setting #1')
 			.setDesc('It\'s a secret')
 			.addText(text => text
 				.setPlaceholder('Enter your secret')
-				.setValue(this.plugin.settings.mySetting)
+				.setValue(this?.plugin?.settings?.mySetting ?? "")
 				.onChange(async (value) => {
-					this.plugin.settings.mySetting = value;
+					// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+					this!.plugin!.settings!.mySetting = value;
 					await this.plugin.saveSettings();
 				}));
+		}
 	}
 }
