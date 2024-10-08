@@ -1,4 +1,7 @@
-# Obsidian Sample Plugin
+# Obsidian Plugin Template - Svelte Stack
+
+> [!WARNING]
+> This is **WIP** and _will_ break, crash, fail, or otherwise not work.  Once it's ready for public consumption, this page will update.  Until then, feel free to browse.
 
 This is a sample plugin for [Obsidian](https://obsidian.md).
 
