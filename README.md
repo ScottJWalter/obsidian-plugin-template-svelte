@@ -3,19 +3,25 @@
 > [!WARNING]
 > This is **WIP** and _will_ break, crash, fail, or otherwise not work.  Once it's ready for public consumption, this page will update.  Until then, feel free to browse.
 
-## What?
+## Backstory 
 
-This is a _highly_ opinionated template for building [Obsidian](https://obsidian.md) plugins.  It evolved from several other development stacks, in an attempt (more of an experiment, really) to see if a completely wrapped repo could be created that provided:
+### TL;DR
+
+A _highly_ opinionated template for building [Obsidian](https://obsidian.md) plugins.
+
+### What?
+
+This template evolved from several other development stacks, in an attempt (more of an experiment, really) to see if a completely wrapped repo could be created that provided:
 
 - A code framework using:
   - TypeScript for type checking and documentation
-  - The JEBS stack
-  - Husky configured to easily manage Github Actions
+  - The JEBS toolchain
+  - [Husky](https://github.com/typicode/husky) configured to easily manage Github Actions
   - DotEnv configured to handle environment interaction
 - A configured vscode workspace
 - A configured (and loaded) codespace
 
-## Why?
+### Why?
 
 I'm tired of hunting down a repo to work with, only to spend hours after cloning hunting down dependencies that were probably environmental for the source developer, but not to me.  Try to build, get an error, hunt down the reason, install another package.  Lather, rinse, and repeat.  I don't mean to throw shade on FOSS developers.  I think many of us have gotten used to our system configurations that we take some things for granted.
 
@@ -23,12 +29,14 @@ At any rate, I wanted to create some obsidian plugins.  I knew I was going to be
 
 Challenge accepted.
 
-## JEBS stack?
+### JEBS toolchain?
 
-- Jest
-- ESBuild
-- Bun
-- Svelte
+The `JEBS` toolchain is an attempt to leverage faster tools (e.g. bun over npm) that produce the tightest, lightest JavaScript output, while also making setup, testing and publishing as frictionless as possible.  It's also an opportunity for me to familiarize myself with some of these (new to me) tools:
+
+- Testing:  [Jest](https://github.com/jestjs/jest)
+- Bundling:  [ESBuild](https://github.com/evanw/esbuild)
+- Management:  [Bun](https://github.com/oven-sh/bun)
+- UI:  [Svelte](https://github.com/sveltejs/svelte)
 
 ## Plugin Template Boilerplate
 
