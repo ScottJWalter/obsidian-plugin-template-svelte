@@ -1,14 +1,38 @@
-# Obsidian Plugin Template - Svelte Stack
+# Obsidian Plugin Template - JEBS Stack
 
 > [!WARNING]
 > This is **WIP** and _will_ break, crash, fail, or otherwise not work.  Once it's ready for public consumption, this page will update.  Until then, feel free to browse.
 
-This is a sample plugin for [Obsidian](https://obsidian.md).
+## What?
 
-This project uses TypeScript to provide type checking and documentation.
-The repo depends on the latest plugin API (obsidian.d.ts) in TypeScript Definition format, which contains TSDoc comments describing what it does.
+This is a _highly_ opinionated template for building [Obsidian](https://obsidian.md) plugins.  It evolved from several other development stacks, in an attempt (more of an experiment, really) to see if a completely wrapped repo could be created that provided:
 
-**Note:** The Obsidian API is still in early alpha and is subject to change at any time!
+- A code framework using:
+  - TypeScript for type checking and documentation
+  - The JEBS stack
+  - Husky configured to easily manage Github Actions
+  - DotEnv configured to handle environment interaction
+- A configured vscode workspace
+- A configured (and loaded) codespace
+
+## Why?
+
+I'm tired of hunting down a repo to work with, only to spend hours after cloning hunting down dependencies that were probably environmental for the source developer, but not to me.  Try to build, get an error, hunt down the reason, install another package.  Lather, rinse, and repeat.  I don't mean to throw shade on FOSS developers.  I think many of us have gotten used to our system configurations that we take some things for granted.
+
+At any rate, I wanted to create some obsidian plugins.  I knew I was going to be working on more than one, so I wanted a repeatable template that spun up everything (the list above).  _And_, I wanted to share it, so other's could easily get going.
+
+Challenge accepted.
+
+## JEBS stack?
+
+- Jest
+- ESBuild
+- Bun
+- Svelte
+
+## Plugin Template Boilerplate
+
+> What follows is taken from the [plugin template]() provided by [Obsidian]()
 
 This sample plugin demonstrates some of the basic functionality the plugin API can do.
 
