@@ -7,7 +7,7 @@
 
 ### TL;DR
 
-A _highly_ opinionated template for building [Obsidian](https://obsidian.md) plugins.
+A _highly_ opinionated template for building [Obsidian](https://obsidian.md) plugins, incorporating TypeScript, Bun, Jest, ESBuild, Husky, and DotEnv.
 
 ### What?
 
