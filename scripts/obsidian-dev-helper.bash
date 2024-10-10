@@ -55,6 +55,7 @@
 #
 # ------------------------------------------------------------------------------
 set -euo pipefail
+# shellcheck disable=SC2059
 errorexit() { printf "\x1B[31merror: ${1}\x1B[0m\n" "${@:2}"; exit 1; }
 
 # Check for required utilities.
@@ -76,6 +77,7 @@ workers_kill() {
 	for pid in "${pids[@]}"; do
 		if [ -n "$pid" ]; then
 			kill "$signal" "$pid" &>/dev/null
+			# shellcheck disable=SC2181
 			if [ $? -eq 0 ] && [ "$1" = "-0" ]; then
 				return 0
 			fi

@@ -8,6 +8,9 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 	"features": {
+		"ghcr.io/devcontainers-contrib/features/apt-get-packages:1": {
+			"packages": "curl,lsb-release,wget"
+		},
    		"ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
 		"ghcr.io/devcontainers/features/github-cli:1": {
 			"installDirectlyFromGitHubRelease": true,
